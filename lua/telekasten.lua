@@ -1401,6 +1401,8 @@ local function PreviewImg(opts)
                     ".pdf",
                     ".mp4",
                     ".webm",
+                    ".webp",
+                    ".svg"
                 },
                 preview_type = "media",
                 attach_mappings = function(prompt_bufnr, map)
