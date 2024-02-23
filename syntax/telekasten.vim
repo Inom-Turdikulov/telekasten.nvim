@@ -6,7 +6,8 @@ endif
 runtime! syntax/markdown.vim
 unlet b:current_syntax
 
-syn region Comment matchgroup=Comment start="<!--" end="-->"  contains=tkTag keepend
+" This generate some issue with treesitter, disabled
+" syn region Comment matchgroup=Comment start="<!--" end="-->"  contains=tkTag keepend
 
 syntax region tkLink matchgroup=tkBrackets start=/\[\[/ end=/\]\]/ keepend display oneline contains=tkAliasedLink
 syntax match tkAliasedLink "[^\[\]]\+|" contained conceal
